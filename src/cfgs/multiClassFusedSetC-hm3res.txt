@@ -1,0 +1,32 @@
+[paths]
+datapath = /home/{}/research/datasets/fixedChange2014/dataset
+trainsplit = /home/{}/research/lambdanet/dataSplits/fixedChange2014/multiClassFusedSetCTrain.txt
+valsplit = /home/{}/research/lambdanet/dataSplits/fixedChange2014/multiClassFusedSetCVal.txt
+testsplit = None
+
+[arch]
+outputchannels = 4
+encodermodel = multiscaleVgg16
+decodermodel = multiscaleResidualDecoder
+fusiontype = cat
+mode = lambda
+normtype = batch
+
+[params]
+numepochs = 5
+randominputswap = False
+learningrate = 1e-5
+batchsize = 11
+decayinterval = 0
+decayrate = 0.1
+addchangeweight = 4
+subchangeweight = 4
+exchangeweight = 5.5
+
+[preprocess]
+imgheight = 512
+imgwidth = 512
+redmean = 119.94291851713457
+greenmean = 117.68408167033056
+bluemean = 111.17677560824994
+
