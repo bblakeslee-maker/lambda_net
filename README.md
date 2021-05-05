@@ -147,3 +147,6 @@ Each path should be relative to the top level directory specified in the datapat
 
 ## Extension of Code
 The LambdaNet codebase is written to be modular.  To develop new architectures, it should only be necessary to create new encoder or decoder files.  For interface information, see the sample files provided in the ```encoders``` and ```decoders``` folders.  New fusion nodes may be implemented by modifying the ```lambdaShell``` file, located under the ```utility``` folder.
+
+## Licensing
+This code is provided free for personal and academic use.  For commercial enquiries, please contact the author.
